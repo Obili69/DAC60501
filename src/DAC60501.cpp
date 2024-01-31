@@ -34,7 +34,7 @@ void setNOOP(){
 
 void setDACtype(uint8_t type){
   Wire.beginTransmission(DAC_ADRESS);
-  swich(type){
+  switch(type){
     case 0:
       RESOLUTION = 0b010;
     break;
